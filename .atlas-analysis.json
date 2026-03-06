@@ -1,0 +1,113 @@
+{
+  "projectType": "saas",
+  "projectName": "VoltChat",
+  "projectDescription": "Anonymous ephemeral real-time chat with no data persistence, optional E2EE, and zero server-side storage",
+  "theme": "palm",
+  "primaryColor": "#33cf99",
+  "lightColor": "#1c6c5c",
+  "darkColor": "#0c0c1c",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "introduction",
+              "how-it-works",
+              "features"
+            ]
+          },
+          {
+            "group": "Getting Started",
+            "pages": [
+              "getting-started/installation",
+              "getting-started/configuration",
+              "getting-started/deployment"
+            ]
+          },
+          {
+            "group": "User Guide",
+            "pages": [
+              "user-guide/creating-rooms",
+              "user-guide/messaging",
+              "user-guide/encryption",
+              "user-guide/room-management",
+              "user-guide/moderation"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/ephemeral-messaging",
+              "features/end-to-end-encryption",
+              "features/presence-tracking",
+              "features/reactions-and-replies",
+              "features/room-settings",
+              "features/security"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Developer Guide",
+        "groups": [
+          {
+            "group": "Architecture",
+            "pages": [
+              "architecture/overview",
+              "architecture/tech-stack",
+              "architecture/project-structure"
+            ]
+          },
+          {
+            "group": "API Reference",
+            "pages": [
+              "api/hooks",
+              "api/components",
+              "api/utilities",
+              "api/types"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "advanced/customization",
+              "advanced/self-hosting",
+              "advanced/rate-limiting"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Ephemeral messaging with zero persistence",
+    "Optional AES-GCM 256-bit end-to-end encryption",
+    "Real-time presence tracking and typing indicators",
+    "Message reactions and reply threads",
+    "Public and private rooms with customizable settings",
+    "Room themes and visual customization",
+    "Vote kick and moderation tools",
+    "AFK detection and auto-kick",
+    "PWA support with offline fallback",
+    "Mobile-responsive with swipe gestures"
+  ],
+  "publicApiSurface": [
+    "useChatRoom - Core realtime chat hook",
+    "useLobby - Public room discovery hook",
+    "useBookmarks - Room bookmark management",
+    "useKeyboardShortcuts - Keyboard shortcut handler",
+    "useSwipeGesture - Touch swipe detection",
+    "ChatInterface - Main chat component",
+    "MessageBubble - Message display component",
+    "UserSidebar - Online users component",
+    "encryptMessage - E2EE encryption utility",
+    "decryptMessage - E2EE decryption utility",
+    "generateRoomId - Room ID generation",
+    "validateUsername - Username validation",
+    "getMessageOpacity - Message fade calculation",
+    "getUserColor - User color assignment"
+  ]
+}
